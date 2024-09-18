@@ -1,0 +1,97 @@
+  {% from 'constants.jinja' import t %}
+  {% from 'header.jinja' import Header %}
+  {% from 'section.jinja' import Section %}
+  {% from 'experience.jinja' import Experience %}
+  {% from 'education.jinja' import Education %}
+  {% set showCertificates = data.meta.showCertificates %}
+  {% set showEducation = data.meta.showEducation %}
+  {% set language = data.language or 'en' %}
+
+  <div class="us-cv-template printable">
+    <div class="body">
+      <div style="display: flex; gap: 25px;">
+        <div>
+          {{ Header(data, className='' if data.profilePhoto else 'text-center') }}
+          {% if data.profileSummary %}
+            {% call Section(t[language].professionalSummary) %}
+              <p class="text-left">{{ data.profileSummary }}</p>
+            {% endcall %}
+          {% endif %}
+        </div>
+        {% if data.profilePhoto %}
+          <img 
+            class="profile-photo"
+            alt="{{ data.name }}'s profile photo"
+            src="data:image/jpeg;base64,{{ (base_url ~ '/' ~ data.profilePhoto) | image_to_base64_filter }}"
+            width="230"
+            height="260"
+          />
+        {% endif %}
+      </div>
+
+      {% if data.keySkills and data.keySkills|length > 0 %}
+        {% call Section(t[language].keySkills) %}
+          <ul>
+            {% for keySkillLine in data.keySkills %}
+              <li class="list-item">
+                <b>{{ keySkillLine.title }}:</b> {{ keySkillLine.skills | join(', ') }}
+              </li>
+            {% endfor %}
+          </ul>
+        {% endcall %}
+      {% endif %}
+
+      {% if data.professionalExperienceList and data.professionalExperienceList|length > 0 %}
+        {% call Section(t[language].professionalExperience) %}
+          <div class="multiple-blocks-wrapper d-flex flex-column">
+            {% for item in data.professionalExperienceList | sort(attribute='endDate', reverse=true) %}
+              {{ Experience(item) }}
+            {% endfor %}
+          </div>
+        {% endcall %}
+      {% endif %}
+
+      {% if data.projects %}
+        {% call Section(t[language].projects) %}
+          <div class="multiple-blocks-wrapper d-flex flex-column">
+            {% for item in data.projects %}
+              <div>
+                <h2 class="d-flex justify-content-between">
+                  <span>{{ item.title }}</span>
+                </h2>
+                <ul>
+                  {% for bulletPoint in item.bulletPoints %}
+                    <li class="list-item">{{ bulletPoint }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endfor %}
+          </div>
+        {% endcall %}
+      {% endif %}
+
+      {% if showEducation is not false and data.educationList and data.educationList|length > 0 %}
+        {% call Section(t[language].education) %}
+          {% for item in data.educationList | sort(attribute='endDate', reverse=true) %}
+            {{ Education(item) }}
+          {% endfor %}
+        {% endcall %}
+      {% endif %}
+
+      {% if showCertificates is not false and data.certificates and data.certificates|length > 0 %}
+        {% call Section(t[language].certificates) %}
+          <div class="multiple-blocks-wrapper d-flex flex-column">
+            {% for item in data.certificates | sort(attribute='endDate', reverse=true) %}
+              {{ Certificates(item) }}
+            {% endfor %}
+          </div>
+        {% endcall %}
+      {% endif %}
+
+      {% if data.languages and data.languages|length > 0 %}
+        {% call Section(t[language].languages) %}
+          <p>{{ data.languages | format_languages | join(', ') }}</p>
+        {% endcall %}
+      {% endif %}
+    </div>
+  </div>

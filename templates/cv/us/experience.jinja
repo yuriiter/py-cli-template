@@ -1,0 +1,29 @@
+{% macro Experience(data) %}
+  {% set companyName = data.companyName %}
+  {% set placeOfWork = data.placeOfWork %}
+  {% set positionName = data.positionName %}
+  {% set bulletPoints = data.bulletPoints %}
+  {% set startDate = data.startDate %}
+  {% set endDate = data.endDate %}
+
+  {% if placeOfWork is string %}
+    {% set place = placeOfWork %}
+  {% else %}
+    {% set place = placeOfWork.city ~ ', ' ~ placeOfWork.countryOrState %}
+  {% endif %}
+
+  <div>
+    <h2 class="d-flex justify-content-between">
+      <span>{{ companyName }}, {{ place }}</span>
+      <span>{{ startDate | date_to_month_year }} - {{ endDate | date_to_month_year }}</span>
+    </h2>
+    <h3>{{ positionName }}</h3>
+    {% if bulletPoints and bulletPoints|length > 0 %}
+      <ul>
+        {% for bulletPoint in bulletPoints %}
+          <li class="list-item">{{ bulletPoint }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+{% endmacro %}

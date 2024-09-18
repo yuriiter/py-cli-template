@@ -1,0 +1,6 @@
+{% macro Section(title) %}
+  <div class="list-block">
+    <p class="list-title">{{ title }}</p>
+    {{ caller() }}
+  </div>
+{% endmacro %}

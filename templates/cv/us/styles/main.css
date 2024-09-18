@@ -1,0 +1,143 @@
+* {
+  text-indent: 0;
+}
+
+@media print {
+  *:not(.printable, .printable *, *:has(.printable)) {
+    display: none;
+  }
+}
+
+@page {
+  size: auto;
+  margin: 20pt 30pt;
+}
+body:has(.us-cv-template, .eu-cv-template) {
+  background-color: #555;
+}
+.us-cv-template {
+  color: black;
+  font-family: Arial, sans-serif;
+  width: 1100px;
+  margin: 30px auto;
+  background-color: #fff;
+}
+.us-cv-template .profile-photo {
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.us-cv-template .header {
+  padding-top: 4.68pt;
+  padding-bottom: 1.56em;
+}
+.us-cv-template .header a {
+  white-space: nowrap;
+}
+.us-cv-template .body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.56em;
+}
+.us-cv-template .list-title {
+  font-weight: bold;
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin-bottom: 0.78em;
+}
+* {
+  margin: 0;
+}
+.us-cv-template ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.312em;
+}
+.us-cv-template li {
+  font-size: 16.26pt;
+  line-height: 1.56;
+}
+.us-cv-template a {
+  color: black;
+  display: inline;
+}
+.us-cv-template h1 {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20.69pt;
+}
+.us-cv-template .s1 {
+  font-size: 15.4pt;
+}
+.us-cv-template .p,
+.us-cv-template p {
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 16.26pt;
+  margin: 0pt;
+  line-height: 1.56;
+}
+.us-cv-template h2,
+.us-cv-template h3 {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16.26pt;
+  margin-bottom: 0.312em;
+}
+.us-cv-template .multiple-blocks-wrapper {
+  gap: 1.56em;
+}
+.us-cv-template .s5 {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16.26pt;
+}
+.us-cv-template .s6 {
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 16.26pt;
+}
+.eu-cv-template {
+  width: 1100px;
+  margin: 30px auto;
+  background-color: #fff;
+}
+.eu-cv-template .h1 {
+  font-size: 31.2px;
+  font-weight: 400;
+}
+.eu-cv-template .h2 {
+  font-size: 23.4px;
+}
+.eu-cv-template .h3 {
+  font-size: 20.8px;
+  margin-bottom: 0.1em;
+}
+.eu-cv-template .title {
+  color: #0c56a5;
+  font-weight: bold;
+}
+.eu-cv-template .p {
+  color: #565656;
+  font-size: 19.5px;
+}
+.eu-cv-template .section {
+  margin: 1.95em 0;
+}
+.eu-cv-template .icon {
+  color: #214493;
+}
+.eu-cv-template .link {
+  color: #551a8b;
+}
+.eu-cv-template .small {
+  color: #a9a9a9;
+}
+.eu-cv-template .hr {
+  width: 100%;
+  color: #214493;
+  margin-top: 0.13em;
+}
+.eu-cv-template .profile-photo {
+  object-fit: cover;
+  flex-shrink: 0;
+}

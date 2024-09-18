@@ -1,0 +1,15 @@
+{% macro Education(data) %}
+  {% set degree = data.degree %}
+  {% set place = data.place %}
+  {% set universityName = data.universityName %}
+  {% set major = data.major %}
+  {% set startDate = data.startDate %}
+  {% set endDate = data.endDate %}
+
+  <h2 class="d-flex justify-content-between">
+    {{ degree }}
+    <span>{{ startDate | date_to_month_year }} - {{ endDate | date_to_month_year }}</span>
+  </h2>
+  <p>{{ universityName }}, {{ place.city }}, {{ place.countryOrState }}</p>
+  <p>{{ major }}</p>
+{% endmacro %}

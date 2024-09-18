@@ -1,0 +1,15 @@
+{% macro Certificates(data) %}
+  {% set organizationName = data.organizationName %}
+  {% set certificateName = data.certificateName %}
+  {% set shortDescription = data.shortDescription %}
+  {% set startDate = data.startDate %}
+  {% set endDate = data.endDate %}
+
+  <div>
+    <h2 class="d-flex justify-content-between">
+      {{ organizationName }} - {{ certificateName }}
+      <span>{{ startDate | date_to_month_year }} - {{ endDate | date_to_month_year }}</span>
+    </h2>
+    <p>{{ shortDescription }}</p>
+  </div>
+{% endmacro %}

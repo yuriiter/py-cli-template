@@ -1,0 +1,158 @@
+{
+  "language": "en",
+  "name": "Yurii Tereshchenko",
+  "nationality": "Ukrainian",
+  "dateOfBirth": "2001-08-16T00:00:00.000Z",
+  "gender": "male",
+  "phoneNumber": "+421951355390",
+  "email": "yurii.tereshchenko.w@gmail.com",
+  "linkedIn": "https://linkedin.com/in/yurii-tereshchenko",
+  "website": "https://yuriiter.com",
+  "github": "https://github.com/yuriiter",
+  "city": "Essen",
+  "countryOrState": "Germany",
+  "profilePhoto": "img/profile_photo.jpg",
+  "profileSummary": "Full Stack Developer with a Bachelor's degree in Computer Science. Proficient in React, JavaScript, TypeScript, Node.js and Java. Developed frontend for major Slovak telecom Swan.sk. Significantly optimized and enhanced 3D app used by Flexnode and US DHS. I have extensive hands-on experience with CI/CD, Docker, and cloud computing. Open to frontend, backend, and full stack opportunities. Available to relocate, on- site, hybrid, or remote.",
+  "languages": [
+    {
+      "language": "English",
+      "level": "B2"
+    },
+    {
+      "language": "German",
+      "level": "A2"
+    },
+    {
+      "language": "Ukrainian",
+      "level": "Expert"
+    },
+    {
+      "language": "Slovak",
+      "level": "C1"
+    },
+    {
+      "language": "Russian",
+      "level": "Expert"
+    }
+  ],
+  "keySkills": [
+    {
+      "title": "Frontend Development",
+      "skills": [
+        "React.js",
+        "Redux",
+        "Three.js",
+        "JavaScript",
+        "Next.js",
+        "TypeScript",
+        "HTML",
+        "CSS",
+        "Tailwind",
+        "SASS",
+        "GraphQL"
+      ]
+    },
+    {
+      "title": "Databases",
+      "skills": [
+        "SQL",
+        "ORMs",
+        "MongoDB",
+        "MySQL",
+        "Database Design",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "title": "Backend Development",
+      "skills": ["Express.js", "Nest.js", "Java Spring", "JPA"]
+    },
+    {
+      "title": "DevOps and Tools",
+      "skills": ["Linux", "Bash", "Docker", "CI/CD"]
+    }
+  ],
+  "professionalExperienceList": [
+    {
+      "companyName": "AKULAR",
+      "placeOfWork": {
+        "city": "Bratislava",
+        "countryOrState": "Slovakia"
+      },
+      "positionName": "Frontend Developer",
+      "startDate": "2022-12-01T00:00:00.000Z",
+      "endDate": "2024-02-01T00:00:00.000Z",
+      "bulletPoints": [
+        "Implemented new features and resolved UI issues using JavaScript, React, TypeScript, MUI, Tailwind, and GraphQL, of application used by US DHS and Flexnode.",
+        "Enhanced 3D functionality using Babylon.js, improving average FPS by 30% through optimization techniques.",
+        "Developed an admin panel for application management, implementing CRUD operations for complex data with MUI and GraphQL, and leveraging AWS Lambdas for backend services.",
+        "Utilized Puppeteer on AWS Lambdas for automating app functionality connected to AWS S3 storage.",
+        "Implemented over 100 complex UI interactions and 3D simulations, enhancing user engagement and visual experience.",
+        "Optimized application performance and fixed web worker functionality, contributing to a smoother and more efficient user experience."
+      ]
+    },
+    {
+      "companyName": "SmartBase",
+      "placeOfWork": {
+        "city": "Bratislava",
+        "countryOrState": "Slovakia"
+      },
+      "positionName": "Frontend Developer",
+      "startDate": "2021-06-01T00:00:00.000Z",
+      "endDate": "2021-08-01T00:00:00.000Z",
+      "bulletPoints": [
+        "Developed visual elements and user interfaces for web applications using HTML, CSS, JavaScript, Tailwind, SASS, and Bootstrap, significantly increasing user engagement.",
+        "Collaborated with cross-functional teams to understand product requirements and propose design solutions, ensuring alignment with business goals and enhancing project outcomes.",
+        "Played a key role in frontend development for swan.sk, a major website for a Slovak telecommunications company, optimizing the website for mobile devices and reducing initial loading time by 15%.",
+        "Enhanced Django-based website functionality through Django CMS and DHTML, improving overall site performance and user experience."
+      ]
+    },
+    {
+      "companyName": "Freelance",
+      "placeOfWork": {
+        "city": "Bratislava",
+        "countryOrState": "Slovakia"
+      },
+      "positionName": "Frontend Developer",
+      "startDate": "2020-09-01T00:00:00.000Z",
+      "endDate": "2020-12-01T00:00:00.000Z",
+      "bulletPoints": [
+        "Led end-to-end development of project, designing the UI in Figma and developing it using HTML, CSS, and JavaScript.",
+        "Implemented interactive Three.js animations, enhancing user engagement and visual appeal.",
+        "Configured CMS ModX using PHP for easy content management, enabling the client to update website content effortlessly and independently.",
+        "Successfully delivered a high-quality, user-friendly website, significantly improving the client’s online presence."
+      ]
+    }
+  ],
+  "educationList": [
+    {
+      "degree": "Bachelor",
+      "place": {
+        "city": "Bratislava",
+        "countryOrState": "Slovakia"
+      },
+      "universityName": "Slovak University of Technology in Bratislava",
+      "major": "Computer Science",
+      "startDate": "2019-09-01T00:00:00.000Z",
+      "endDate": "2022-06-01T00:00:00.000Z",
+      "bulletPoints": [
+        "Learned computer science fundamentals, including C, C++, Python, and algorithms.",
+        "Gained expertise in Linux administration and network fundamentals.",
+        "Studied Java technologies, including Java Spring, JAX-RS, and JPA.",
+        "Explored design patterns and utilized Matlab for computational tasks."
+      ]
+    }
+  ],
+  "meta": {
+    "vacancyPositionName": "Software Engineer III",
+    "format": "EU",
+    "createdAt": "2024-06-21T21:17:37.885Z",
+    "updatedAt": "2024-09-06T13:37:02.720Z",
+    "showCertificates": true,
+    "showEducation": true,
+    "showRelocationLine": true,
+    "showVisaLine": true
+  },
+  "id": "e05295e9-14c5-4a36-814a-c3524aead272",
+  "willingToRelocate": {}
+}

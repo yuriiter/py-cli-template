@@ -1,0 +1,32 @@
+{% macro Header(data, className='') %}
+  <div class="{{ 'header ' ~ className }}">
+    <h1>{{ data.name }}</h1>
+    <p class="s1">
+      {{ data.city }}, {{ data.countryOrState }} 
+      {%- if data.meta.showRelocationLine != false and data.willingToRelocate and data.willingToRelocate.city and data.willingToRelocate.countryOrState -%}
+        (Willing to relocate to {{ data.willingToRelocate.city }}, {{ data.willingToRelocate.countryOrState }})
+      {%- endif %}
+
+      {{" | "}}<a href="tel:{{ data.phoneNumber }}">{{ data.phoneNumber | mask_phone_number }}</a> 
+
+      {{" | "}}<a href="mailto:{{ data.email }}">{{ data.email }}</a> 
+
+      {%- if data.linkedIn -%}
+        {{" | "}}<a href="{{ data.linkedIn }}">{{ data.linkedIn }}</a>
+      {%- endif %}
+
+      {%- if data.website -%}
+        {{" | "}}<a href="{{ data.website }}">{{ data.website }}</a>
+      {%- endif %}
+
+      {%- if data.github -%}
+        {{" | "}}<a href="{{ data.github }}">{{ data.github }}</a>
+      {%- endif %}
+
+      {%- if data.meta.showVisaLine != false and data.workAuthorizationLine -%}
+        <br />
+        {{ data.workAuthorizationLine }}
+      {%- endif %}
+    </p>
+  </div>
+{% endmacro %}
