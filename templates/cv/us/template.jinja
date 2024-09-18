@@ -5,6 +5,9 @@
   {% from 'education.jinja' import Education %}
   {% set showCertificates = data.meta.showCertificates %}
   {% set showEducation = data.meta.showEducation %}
+  {% set showLanguages = data.meta.showLanguages %}
+  {% set showProfilePhoto = data.meta.showProfilePhoto %}
+  {% set showProjects = data.meta.showProjects %}
   {% set language = data.language or 'en' %}
 
   <div class="us-cv-template printable">
@@ -18,7 +21,7 @@
             {% endcall %}
           {% endif %}
         </div>
-        {% if data.profilePhoto %}
+        {% if showProfilePhoto and data.profilePhoto %}
           <img 
             class="profile-photo"
             alt="{{ data.name }}'s profile photo"
@@ -51,7 +54,7 @@
         {% endcall %}
       {% endif %}
 
-      {% if data.projects %}
+      {% if showProjects and data.projects %}
         {% call Section(t[language].projects) %}
           <div class="multiple-blocks-wrapper d-flex flex-column">
             {% for item in data.projects %}
@@ -88,7 +91,7 @@
         {% endcall %}
       {% endif %}
 
-      {% if data.languages and data.languages|length > 0 %}
+      {% if showLanguages is not false and data.languages and data.languages|length > 0 %}
         {% call Section(t[language].languages) %}
           <p>{{ data.languages | format_languages | join(', ') }}</p>
         {% endcall %}

@@ -12,7 +12,7 @@
   "city": "Essen",
   "countryOrState": "Germany",
   "profilePhoto": "img/profile_photo.jpg",
-  "profileSummary": "Full Stack Developer with a Bachelor's degree in Computer Science. Proficient in React, JavaScript, TypeScript, Node.js and Java. Developed frontend for major Slovak telecom Swan.sk. Significantly optimized and enhanced 3D app used by Flexnode and US DHS. I have extensive hands-on experience with CI/CD, Docker, and cloud computing. Open to frontend, backend, and full stack opportunities. Available to relocate, on- site, hybrid, or remote.",
+  "profileSummary": "Full Stack Developer with a Bachelor's degree in Computer Science. Proficient in React, JavaScript, TypeScript, Node.js and Java. Developed frontend for major Slovak telecom Swan.sk. Significantly optimized and enhanced 3D app used by Flexnode and US DHS. I have extensive hands-on experience with CI/CD, Docker, and cloud computing. Open to frontend, backend, and full stack opportunities. Available to relocate, on-site, hybrid, or remote.",
   "languages": [
     {
       "language": "English",
@@ -99,7 +99,7 @@
       },
       "positionName": "Frontend Developer",
       "startDate": "2021-06-01T00:00:00.000Z",
-      "endDate": "2021-08-01T00:00:00.000Z",
+      "endDate": "2021-09-01T00:00:00.000Z",
       "bulletPoints": [
         "Developed visual elements and user interfaces for web applications using HTML, CSS, JavaScript, Tailwind, SASS, and Bootstrap, significantly increasing user engagement.",
         "Collaborated with cross-functional teams to understand product requirements and propose design solutions, ensuring alignment with business goals and enhancing project outcomes.",
@@ -143,16 +143,35 @@
       ]
     }
   ],
+  "projects": [
+    {"title": "", "bulletPoints": ["", ""]}
+  ],
+  "certificates": [
+    {
+      "organizationName": "string";
+      "certificateName": "string";
+      "shortDescription": "string";
+      "link": "string";
+      "startDate": "2022-06-01T00:00:00.000Z";
+      "endDate": "2022-06-01T00:00:00.000Z";
+    }
+  ],
   "meta": {
     "vacancyPositionName": "Software Engineer III",
-    "format": "EU",
+    "format": "US",
     "createdAt": "2024-06-21T21:17:37.885Z",
     "updatedAt": "2024-09-06T13:37:02.720Z",
-    "showCertificates": true,
+    "showCertificates": false,
     "showEducation": true,
-    "showRelocationLine": true,
-    "showVisaLine": true
+    "showRelocationLine": false,
+    "showLanguages": true,
+    "showVisaLine": false,
+    "showProjects": false,
+    "showProfilePhoto": true
   },
   "id": "e05295e9-14c5-4a36-814a-c3524aead272",
-  "willingToRelocate": {}
+  "willingToRelocate": {
+    "city": "Los Angeles",
+    "countryOrState": "California"
+  }
 }

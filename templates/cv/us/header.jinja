@@ -4,7 +4,7 @@
     <p class="s1">
       {{ data.city }}, {{ data.countryOrState }} 
       {%- if data.meta.showRelocationLine != false and data.willingToRelocate and data.willingToRelocate.city and data.willingToRelocate.countryOrState -%}
-        (Willing to relocate to {{ data.willingToRelocate.city }}, {{ data.willingToRelocate.countryOrState }})
+      {{" "}}(Willing to relocate to {{ data.willingToRelocate.city }}, {{ data.willingToRelocate.countryOrState }})
       {%- endif %}
 
       {{" | "}}<a href="tel:{{ data.phoneNumber }}">{{ data.phoneNumber | mask_phone_number }}</a> 
