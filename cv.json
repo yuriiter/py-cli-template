@@ -9,7 +9,7 @@
   "linkedIn": "https://linkedin.com/in/yurii-tereshchenko",
   "website": "https://yuriiter.com",
   "github": "https://github.com/yuriiter",
-  "city": "Essen",
+  "city": "Berlin",
   "countryOrState": "Germany",
   "profilePhoto": "img/profile_photo.jpg",
   "profileSummary": "Full Stack Developer with a Bachelor's degree in Computer Science. Proficient in React, JavaScript, TypeScript, Node.js and Java. Developed frontend for major Slovak telecom Swan.sk. Significantly optimized and enhanced 3D app used by Flexnode and US DHS. I have extensive hands-on experience with CI/CD, Docker, and cloud computing. Open to frontend, backend, and full stack opportunities. Available to relocate, on-site, hybrid, or remote.",
@@ -144,14 +144,14 @@
     }
   ],
   "projects": [
-    {"title": "", "bulletPoints": ["", ""]}
+    {"title": "Concise title", "bulletPoints": ["Short bullet point 1", "Short bullet point 1"]}
   ],
   "certificates": [
     {
-      "organizationName": "string";
-      "certificateName": "string";
-      "shortDescription": "string";
-      "link": "string";
+      "organizationName": "Organization name";
+      "certificateName": "Certificate name";
+      "shortDescription": "Short description";
+      "link": "link";
       "startDate": "2022-06-01T00:00:00.000Z";
       "endDate": "2022-06-01T00:00:00.000Z";
     }
