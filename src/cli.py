@@ -49,6 +49,9 @@ def main():
 
     output_path = args.output if args.output else generate_default_output_path(file_idx=0)
 
+    # with open('output.html', "w") as f:
+    #     f.write(html_output)
+
     with open(output_path, "wb") as f:
         f.write(pdf_output)
 

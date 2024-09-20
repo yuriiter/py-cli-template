@@ -3,39 +3,39 @@
   {% from 'section.jinja' import Section %}
   {% from 'experience.jinja' import Experience %}
   {% from 'education.jinja' import Education %}
-  {% set showCertificates = data.meta.showCertificates %}
-  {% set showEducation = data.meta.showEducation %}
-  {% set showLanguages = data.meta.showLanguages %}
-  {% set showProfilePhoto = data.meta.showProfilePhoto %}
-  {% set showProjects = data.meta.showProjects %}
-  {% set language = data.language or 'en' %}
+  {% set showCertificates = meta.showCertificates %}
+  {% set showEducation = meta.showEducation %}
+  {% set showLanguages = meta.showLanguages %}
+  {% set showProfilePhoto = meta.showProfilePhoto %}
+  {% set showProjects = meta.showProjects %}
+  {% set language = language or 'en' %}
 
   <div class="us-cv-template printable">
     <div class="body">
       <div style="display: flex; gap: 25px;">
         <div>
-          {{ Header(data, className='' if data.profilePhoto else 'text-center') }}
-          {% if data.profileSummary %}
+          {{ Header(data, className='' if profilePhoto and showProfilePhoto else 'text-center') }}
+          {% if profileSummary %}
             {% call Section(t[language].professionalSummary) %}
-              <p class="text-left">{{ data.profileSummary }}</p>
+              <p class="text-left">{{ profileSummary }}</p>
             {% endcall %}
           {% endif %}
         </div>
-        {% if showProfilePhoto and data.profilePhoto %}
+        {% if showProfilePhoto and profilePhoto %}
           <img 
             class="profile-photo"
-            alt="{{ data.name }}'s profile photo"
-            src="data:image/jpeg;base64,{{ (base_url ~ '/' ~ data.profilePhoto) | image_to_base64_filter }}"
+            alt="{{ name }}'s profile photo"
+            src="data:image/jpeg;base64,{{ (base_url ~ '/' ~ profilePhoto) | image_to_base64_filter }}"
             width="230"
             height="260"
           />
         {% endif %}
       </div>
 
-      {% if data.keySkills and data.keySkills|length > 0 %}
+      {% if keySkills and keySkills|length > 0 %}
         {% call Section(t[language].keySkills) %}
           <ul>
-            {% for keySkillLine in data.keySkills %}
+            {% for keySkillLine in keySkills %}
               <li class="list-item">
                 <b>{{ keySkillLine.title }}:</b> {{ keySkillLine.skills | join(', ') }}
               </li>
@@ -44,20 +44,20 @@
         {% endcall %}
       {% endif %}
 
-      {% if data.professionalExperienceList and data.professionalExperienceList|length > 0 %}
+      {% if professionalExperienceList and professionalExperienceList|length > 0 %}
         {% call Section(t[language].professionalExperience) %}
           <div class="multiple-blocks-wrapper d-flex flex-column">
-            {% for item in data.professionalExperienceList | sort(attribute='endDate', reverse=true) %}
+            {% for item in professionalExperienceList | sort(attribute='endDate', reverse=true) %}
               {{ Experience(item) }}
             {% endfor %}
           </div>
         {% endcall %}
       {% endif %}
 
-      {% if showProjects and data.projects %}
+      {% if showProjects and projects %}
         {% call Section(t[language].projects) %}
           <div class="multiple-blocks-wrapper d-flex flex-column">
-            {% for item in data.projects %}
+            {% for item in projects %}
               <div>
                 <h2 class="d-flex justify-content-between">
                   <span>{{ item.title }}</span>
@@ -73,27 +73,27 @@
         {% endcall %}
       {% endif %}
 
-      {% if showEducation is not false and data.educationList and data.educationList|length > 0 %}
+      {% if showEducation is not false and educationList and educationList|length > 0 %}
         {% call Section(t[language].education) %}
-          {% for item in data.educationList | sort(attribute='endDate', reverse=true) %}
+          {% for item in educationList | sort(attribute='endDate', reverse=true) %}
             {{ Education(item) }}
           {% endfor %}
         {% endcall %}
       {% endif %}
 
-      {% if showCertificates is not false and data.certificates and data.certificates|length > 0 %}
+      {% if showCertificates is not false and certificates and certificates|length > 0 %}
         {% call Section(t[language].certificates) %}
           <div class="multiple-blocks-wrapper d-flex flex-column">
-            {% for item in data.certificates | sort(attribute='endDate', reverse=true) %}
+            {% for item in certificates | sort(attribute='endDate', reverse=true) %}
               {{ Certificates(item) }}
             {% endfor %}
           </div>
         {% endcall %}
       {% endif %}
 
-      {% if showLanguages is not false and data.languages and data.languages|length > 0 %}
+      {% if showLanguages is not false and languages and languages|length > 0 %}
         {% call Section(t[language].languages) %}
-          <p>{{ data.languages | format_languages | join(', ') }}</p>
+          <p>{{ languages | format_languages | join(', ') }}</p>
         {% endcall %}
       {% endif %}
     </div>

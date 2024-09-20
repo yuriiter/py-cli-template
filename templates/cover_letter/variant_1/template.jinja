@@ -1,0 +1,59 @@
+<div class="container printable">
+  <div class="header">
+    <h1>{{ fullName }}</h1>
+    <p>
+    Email: <a href="mailto:{{ email }}">{{ email }}</a> | Phone:
+    <a href="tel:{{ phoneNumber }}"
+       >{{ phoneNumber | mask_phone_number }}</a
+     >
+     <br />
+     {% if website %} Website: <a href="{{ website }}">{{ website }}</a> |
+     {% endif %} {% if github %} GitHub:
+     <a href="{{ github }}">{{ github }}</a> | {% endif %} {% if linkedin
+     %} LinkedIn: <a href="{{ linkedin }}">{{ linkedin }}</a>
+     {% endif %}
+    </p>
+  </div>
+
+  <div class="content">
+    <h2>{{ job_title }}</h2>
+    <p>
+    Date: {{ "" | get_formatted_today }}<br />
+    Dear {{ salutation_name }},
+    </p>
+
+    <p>
+    I hope this message finds you well. I am writing to express my strong
+    interest in the position of {{ job_title }} as advertised. With high
+    skill in {{ main_technologies | join(", ") }}, I believe I am well-positioned to
+    contribute to your company’s success.
+    </p>
+
+    <p>
+    Here are a few reasons why I believe I would be a great fit for the
+    role:
+    </p>
+
+    <ul class="bullet-points">
+      {% for bullet_point in bullet_points %}
+      <li>{{ bullet_point }}</li>
+      {% endfor %}
+    </ul>
+
+    {% if closing_statement %}
+    <p>{{ closing_statement }}</p>
+    {% else %}
+    <p>
+    I am confident that my background in software development, combined
+    with my passion for innovative technology, makes me a strong candidate
+    for this role. I look forward to the opportunity to further discuss
+    how I can contribute to your team and help achieve your goals.
+    </p>
+    {% endif %}
+
+    <p class="signature">
+    Best wishes,<br />
+    <span class="name">{{ fullName }}</span>
+    </p>
+  </div>
+</div>

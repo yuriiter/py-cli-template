@@ -1,0 +1,78 @@
+@page {
+  size: auto;
+  margin: 10pt 20pt;
+}
+
+@media print {
+  *:not(.printable, .printable *, *:has(.printable)) {
+    display: none;
+  }
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.header h1 {
+  margin: 0;
+  color: #333;
+  font-size: 28px;
+}
+
+.header p {
+  color: #555;
+  margin: 5px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.content {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.content h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #333;
+}
+
+.bullet-points {
+  margin-left: 10px;
+}
+
+.bullet-points li {
+  margin-bottom: 5px;
+}
+
+.signature {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.signature .name {
+  font-weight: bold;
+}
+
+p,
+h2 {
+  margin-bottom: 15px;
+}

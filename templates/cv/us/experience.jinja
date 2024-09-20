@@ -1,10 +1,10 @@
 {% macro Experience(data) %}
-  {% set companyName = data.companyName %}
-  {% set placeOfWork = data.placeOfWork %}
-  {% set positionName = data.positionName %}
-  {% set bulletPoints = data.bulletPoints %}
-  {% set startDate = data.startDate %}
-  {% set endDate = data.endDate %}
+  {% set companyName = companyName %}
+  {% set placeOfWork = placeOfWork %}
+  {% set positionName = positionName %}
+  {% set bulletPoints = bulletPoints %}
+  {% set startDate = startDate %}
+  {% set endDate = endDate %}
 
   {% if placeOfWork is string %}
     {% set place = placeOfWork %}

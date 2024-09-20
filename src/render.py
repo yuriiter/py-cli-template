@@ -1,5 +1,5 @@
 from jinja2 import Environment, FileSystemLoader, select_autoescape
-from filters import  format_languages, mask_phone_number, date_to_month_year, image_to_base64_filter
+import filters
 import os
 import tempfile
 import asyncio
@@ -14,14 +14,15 @@ def render_template(template_path: str, data: dict) -> str:
 
     template_name = os.path.basename(template_path)
 
-    env.filters['format_languages'] = format_languages
-    env.filters['mask_phone_number'] = mask_phone_number
-    env.filters['date_to_month_year'] = date_to_month_year
-    env.filters['image_to_base64_filter'] = image_to_base64_filter
+    env.filters['format_languages'] = filters.format_languages
+    env.filters['mask_phone_number'] = filters.mask_phone_number
+    env.filters['date_to_month_year'] = filters.date_to_month_year
+    env.filters['image_to_base64_filter'] = filters.image_to_base64_filter
+    env.filters['get_formatted_today'] = filters.get_formatted_today
 
     template = env.get_template(template_name)
 
-    return template.render(data=data, base_url=templates_dir)
+    return template.render(**data, base_url=templates_dir)
 
 def render_pdf(html: str) -> bytes:
     async def render_pdf():

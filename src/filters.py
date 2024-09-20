@@ -44,3 +44,6 @@ def format_languages(languages):
 def image_to_base64_filter(image_path):
     with open(image_path, 'rb') as image_file:
         return base64.b64encode(image_file.read()).decode('utf-8')
+
+def get_formatted_today(_dummy):
+    return datetime.now().strftime("%B %d, %Y")
