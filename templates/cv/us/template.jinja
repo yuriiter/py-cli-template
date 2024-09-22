@@ -1,8 +1,9 @@
-  {% from 'constants.jinja' import t %}
-  {% from 'header.jinja' import Header %}
-  {% from 'section.jinja' import Section %}
-  {% from 'experience.jinja' import Experience %}
-  {% from 'education.jinja' import Education %}
+  {% from 'constants.jinja' import t with context %}
+  {% from 'header.jinja' import Header with context %}
+  {% from 'section.jinja' import Section with context %}
+  {% from 'experience.jinja' import Experience with context %}
+  {% from 'education.jinja' import Education with context %}
+  {% from 'certificates.jinja' import Certificates with context %}
   {% set showCertificates = meta.showCertificates %}
   {% set showEducation = meta.showEducation %}
   {% set showLanguages = meta.showLanguages %}
@@ -14,7 +15,7 @@
     <div class="body">
       <div style="display: flex; gap: 25px;">
         <div>
-          {{ Header(data, className='' if profilePhoto and showProfilePhoto else 'text-center') }}
+          {{ Header(className='' if profilePhoto and showProfilePhoto else 'text-center') }}
           {% if profileSummary %}
             {% call Section(t[language].professionalSummary) %}
               <p class="text-left">{{ profileSummary }}</p>
