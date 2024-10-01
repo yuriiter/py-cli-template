@@ -55,6 +55,9 @@ def main():
     with open(output_path, "wb") as f:
         f.write(pdf_output)
 
+    with open('out/tmp/tmp.pdf', "wb") as f:
+        f.write(pdf_output)
+
     print(f"PDF successfully generated and saved to {output_path}")
 
 if __name__ == "__main__":

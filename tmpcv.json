@@ -1,0 +1,194 @@
+{
+  "language": "en",
+  "name": "Yurii Tereshchenko",
+  "nationality": "Ukrainian",
+  "dateOfBirth": "2001-08-16T00:00:00.000Z",
+  "gender": "male",
+  "phoneNumber": "+421951355390",
+  "email": "yurii.tereshchenko.w@gmail.com",
+  "linkedIn": "https://linkedin.com/in/yurii-tereshchenko",
+  "website": "https://yuriiter.com",
+  "github": "https://github.com/yuriiter",
+  "city": "Berlin",
+  "countryOrState": "Germany",
+  "profilePhoto": "img/profile_photo.jpg",
+  "profileSummary": "<b>Full Stack Developer</b> with a Bachelor's degree in Computer Science. Proficient in <b>React</b>, <b>JavaScript</b>, <b>TypeScript</b>, <b>Node.js</b> and <b>Java</b>. Developed frontend for major Slovak telecom Swan.sk. Significantly optimized and enhanced 3D app used by Bentley and US DHS. I have extensive hands-on experience with <b>CI/CD</b>, <b>Docker</b>, and <b>cloud computing</b>. Open to frontend, backend, and full stack opportunities. Available to relocate, on-site, hybrid, or remote.",
+  "languages": [
+    {
+      "language": "English",
+      "level": "B2"
+    },
+    {
+      "language": "German",
+      "level": "A2"
+    },
+    {
+      "language": "Ukrainian",
+      "level": "Expert"
+    },
+    {
+      "language": "Slovak",
+      "level": "C1"
+    },
+    {
+      "language": "Russian",
+      "level": "Expert"
+    }
+  ],
+  "keySkills": [
+    {
+      "title": "Frontend Development",
+      "skills": [
+        "React.js",
+        "Next.js",
+        "Redux",
+        "JavaScript",
+        "TypeScript",
+        "HTML",
+        "CSS",
+        "Tailwind",
+        "SASS"
+      ]
+    },
+    {
+      "title": "Backend Development",
+      "skills": [
+        "Express.js",
+        "Nest.js",
+        "AWS",
+        "OAuth",
+        "JWT",
+        "Java Spring",
+        "JPA"
+      ]
+    },
+    {
+      "title": "Databases",
+      "skills": ["SQL", "ORM", "MongoDB", "Document databases"]
+    },
+    {
+      "title": "DevOps and Tools",
+      "skills": ["Bash", "Docker", "CI/CD", "Git"]
+    }
+  ],
+  "professionalExperienceList": [
+    {
+      "companyName": "AKULAR",
+      "placeOfWork": {
+        "city": "Bratislava",
+        "countryOrState": "Slovakia"
+      },
+      "positionName": "Frontend Developer",
+      "startDate": "2022-12-01T00:00:00.000Z",
+      "endDate": "2024-02-01T00:00:00.000Z",
+      "bulletPoints": [
+        "Implemented new features and resolved UI issues using <b>JavaScript</b>, <b>React</b>, <b>TypeScript</b>, <b>MUI</b>, <b>Tailwind</b>, and <b>GraphQL</b>, of application used by US DHS and Bentley.",
+        "Enhanced 3D functionality using <b>Babylon.js</b>, improving average FPS by 30% through optimization techniques.",
+        "Developed an admin panel for application management, implementing <b>CRUD</b> operations for complex data with <b>MUI</b> and <b>GraphQL</b>, and leveraging <b>AWS</b> for backend services.",
+        "Implemented over 100 complex UI interactions and 3D simulations, enhancing user engagement and visual experience.",
+        "Optimized application performance and fixed web worker functionality, contributing to a smoother and more efficient user experience."
+      ]
+    },
+    {
+      "companyName": "SmartBase",
+      "placeOfWork": {
+        "city": "Bratislava",
+        "countryOrState": "Slovakia"
+      },
+      "positionName": "Frontend Developer",
+      "startDate": "2021-06-01T00:00:00.000Z",
+      "endDate": "2021-08-01T00:00:00.000Z",
+      "bulletPoints": [
+        "Developed visual elements and user interfaces for web applications using <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, <b>Tailwind</b>, <b>SASS</b>, and <b>Bootstrap</b>, significantly increasing user engagement.",
+        "Collaborated with cross-functional teams to understand product requirements and propose design solutions, ensuring alignment with business goals and enhancing project outcomes.",
+        "Developed frontend for <b>swan.sk</b>, a major website for a Slovak telecommunications company, optimizing the website for mobile devices and reducing initial loading time by 15%.",
+        "Enhanced <b>Django</b>-based website functionality through <b>Django CMS</b> and <b>DHTML</b>, improving overall site performance and user experience."
+      ]
+    },
+    {
+      "companyName": "Freelance",
+      "placeOfWork": {
+        "city": "Bratislava",
+        "countryOrState": "Slovakia"
+      },
+      "positionName": "Frontend Developer",
+      "startDate": "2020-09-01T00:00:00.000Z",
+      "endDate": "2020-12-01T00:00:00.000Z",
+      "bulletPoints": [
+        "Led end-to-end development of project, designing the UI in <b>Figma</b> and developing it using <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>.",
+        "Implemented interactive <b>Three.js</b> animations, enhancing user engagement and visual appeal.",
+        "Configured <b>CMS ModX</b> using <b>PHP</b> for easy content management, enabling the client to update website content effortlessly and independently.",
+        "Successfully delivered a high-quality, user-friendly website, significantly improving the client’s online presence."
+      ]
+    }
+  ],
+  "educationList": [
+    {
+      "degree": "Bachelor",
+      "place": {
+        "city": "Bratislava",
+        "countryOrState": "Slovakia"
+      },
+      "universityName": "Slovak University of Technology in Bratislava",
+      "major": "Computer Science",
+      "startDate": "2019-09-01T00:00:00.000Z",
+      "endDate": "2022-06-01T00:00:00.000Z",
+      "bulletPoints": [
+        "Learned computer science fundamentals, including <b>C</b>, <b>C++</b>, <b>Python</b>, and algorithms.",
+        "Gained expertise in <b>Linux</b> administration and <b>network fundamentals</b>.",
+        "Studied <b>Java</b> technologies, including <b>Java Spring</b>, <b>JAX-RS</b>, and <b>JPA</b>.",
+        "Explored design patterns and utilized <b>Matlab</b> for computational tasks."
+      ]
+    }
+  ],
+  "certificates": [
+    {
+      "organizationName": "Google Digital Marketing",
+      "certificateName": "Digital Marketing Certification",
+      "shortDescription": "Obtained certification in digital marketing strategies and techniques from Google.",
+      "startDate": "2021-03-01T00:00:00.000Z",
+      "endDate": "2021-04-01T00:00:00.000Z"
+    },
+    {
+      "organizationName": "Web-design Academy",
+      "certificateName": "Explosive Start in Web-design",
+      "shortDescription": "Completed course covering fundamentals of web-design, focusing on modern trends and tools.",
+      "startDate": "2020-08-01T00:00:00.000Z",
+      "endDate": "2020-09-01T00:00:00.000Z"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Chat Application",
+      "bulletPoints": [
+        "Developed a real-time chat application using <b>React</b> for the frontend and <b>Nest.js</b> for the backend.",
+        "Implemented secure file and image handling, ensuring authorized access only.",
+        "Utilized <b>WebSockets</b> for real-time communication and <b>Prisma ORM</b> for database management.",
+        "https://github.com/yuriiter/react-chat"
+      ]
+    },
+    {
+      "title": "Morent",
+      "bulletPoints": [
+        "Built a full-stack car rental application with <b>Next.js</b>, <b>Express.js</b>, and <b>MongoDB</b>.",
+        "Implemented <b>JWT</b> for secure user authentication and <b>Zod</b> for data validation.",
+        "Utilized <b>Docker-compose</b> for development environment management.",
+        "https://github.com/yuriiter/morent"
+      ]
+    }
+  ],
+  "meta": {
+    "vacancyPositionName": "Software Engineer III",
+    "format": "US",
+    "createdAt": "2024-06-21T21:17:37.885Z",
+    "updatedAt": "2024-09-11T11:51:14.033Z",
+    "showCertificates": false,
+    "showEducation": true,
+    "showRelocationLine": false,
+    "showProjects": false,
+    "showLanguages": false,
+    "showRelocationLine": false,
+    "showProfilePhoto": true,
+    "showVisaLine": false
+  }
+}
